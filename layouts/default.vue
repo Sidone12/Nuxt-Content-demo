@@ -13,7 +13,6 @@ useHead({
     ]
 })
 </script>
-
 <template>
 <div class="container mx-auto max-w-6xl">
     <header class="flex justify-between items-center pt-5">
