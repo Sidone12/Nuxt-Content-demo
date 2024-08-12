@@ -1,22 +1,5 @@
-<script setup>
-useHead({
-    titleTemplate: 'Projects'
-})
-</script>
-
-
 <template>
-    <div>
-        <h2 class="text-2xl font-semibold mb-10">
-            <ProjectList/>
-        </h2>
-    </div>
+    <article class="prose dark:prose-invert">
+       <ContentDoc path="/projects"/>
+    </article>
 </template>
-
-<script setup>
-
-</script>
-
-<style lang="scss" scoped>
-
-</style>
