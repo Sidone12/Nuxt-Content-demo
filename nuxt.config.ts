@@ -1,12 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode'
-  ],
-  colorMode: {
-    classSuffix: ''
+  devtools: {enabled: true},
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/content'],
+  content: {
+    highlight: {
+      theme: {
+        // Default theme (same as single string)
+        default: 'min-light',
+        // Theme used if `html.dark`
+        dark: 'min-dark',
+      },
+    },
   },
-  compatibilityDate: "2024-07-03"
-})
+  colorMode: {
+    classSuffix: '',
+  },
+  compatibilityDate: '2024-07-03',
+});
