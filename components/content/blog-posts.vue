@@ -35,7 +35,6 @@ const posts = computed(() => {
     for (let post of data.value) {
         const year = new Date(post.publishedAt).getFullYear()
         const displayYear = year != lastYear
-        console.log(`Sould display a year ${displayYear}`)
         post.displayYear = displayYear
         post.year = year
         result.push(post)

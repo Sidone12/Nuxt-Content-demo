@@ -14,11 +14,10 @@
     - name: 'copyright'
       ogTitle: '[og:title]'
   publishedAt: 2024-08-12 15:12:00
+  toc: true
 ---
 
 
-
-First post on your website
 # First post on our website
 ## Introduction 
 This is some text. *This is italic*.
