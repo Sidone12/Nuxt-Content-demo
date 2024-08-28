@@ -18,7 +18,7 @@ useHead({
     <header class="flex justify-between items-center pt-5">
         <div class="flex items-center space-x-12">
             <div>
-                <nuxt-link class="hover:bg-gray-200 text-xl font-semibold p-2 " to="/">Oleksii Katerynchuk</nuxt-link>
+                <nuxt-link class="hover:bg-gray-200 text-xl font-semibold p-2 dark:hover:bg-gray-800 " to="/">Oleksii Katerynchuk</nuxt-link>
             </div>
             <Menu/>
         </div>
