@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: {enabled: true},
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/content'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/content', '@nuxt/image'],
   app: {
-    pageTransition: {name: 'page', mode: 'out-in'}
+    pageTransition: {name: 'page', mode: 'out-in'},
   },
   content: {
     highlight: {
@@ -15,8 +15,25 @@ export default defineNuxtConfig({
       },
     },
   },
+  compatibilityDate: '2024-07-03',
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml'],
+    },
+  },
   colorMode: {
     classSuffix: '',
   },
-  compatibilityDate: '2024-07-03',
+  generate: {
+    routes: [
+      '/',
+      '/about',
+      '/blog',
+      '/blog/2024/first',
+      '/blog/first',
+      '/blog/second',
+      '/blog/vue-introduction',
+      '/projects',
+    ],
+  },
 });
